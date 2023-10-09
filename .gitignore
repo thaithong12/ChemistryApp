@@ -12,9 +12,9 @@
 /build
 
 contact.html
-index.html
-topics-detail.html
-topics-listing.html
+./index.html
+./topics-detail.html
+./topics-listing.html
 
 # misc
 .DS_Store

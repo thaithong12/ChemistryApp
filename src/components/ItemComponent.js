@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { GLTFModel, AmbientLight, DirectionLight } from "react-3d-viewer";
+
+
 
 function ItemComponent(props) {
   const data = props.data ? props.data : {};
   const index = props.index ? props.index : 0;
+const modelPath =
+    "https://storage.googleapis.com/search-ar-edu/periodic-table/element_044_ruthenium/element_044_ruthenium.glb";
+  
   return (
     <div className="container data-item" style={{ marginTop: index !== 0 ? '10%' : '0' }}>
       <div className="row justify-content-center">
@@ -21,7 +27,20 @@ function ItemComponent(props) {
 
               </div>
 
-              <img src="images/topics/undraw_Remote_design_team_re_urdx.png" className="custom-block-image img-fluid" alt="" />
+              {/* <img src="images/topics/undraw_Remote_design_team_re_urdx.png" className="custom-block-image img-fluid" alt="" /> */}
+              <div>
+      <GLTFModel src={modelPath} width='300' height='200' scale={{x:8, y: 8 , z: 8}} >
+        <AmbientLight color={0xffffff} />
+        <DirectionLight
+          color={0xffffff}
+          position={{ x: 100, y: 200, z: 100 }}
+        />
+        <DirectionLight
+          color={0xff00ff}
+          position={{ x: -100, y: 200, z: -100 }}
+        />
+      </GLTFModel>
+    </div>
             </a>
           </div>
         </div>
