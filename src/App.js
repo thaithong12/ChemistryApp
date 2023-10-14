@@ -6,6 +6,9 @@ import Results from './components/Results';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Home from './components/Home';
 import Detail from './components/Detail';
+import './css/bootstrap-icons.css';
+import './css/bootstrap.min.css';
+import './css/templatemo-topic-listing.css';
 
 function App() {
 
