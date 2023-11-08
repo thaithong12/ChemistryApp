@@ -1,29 +1,25 @@
-import React, { useState,useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { GLTFModel, AmbientLight, DirectionLight } from "react-3d-viewer";
 import { Link } from 'react-router-dom';
-
-
+import { FaVolumeUp } from 'react-icons/fa';
 
 function ItemComponent(props) {
   const data = props.data ? props.data : {};
   const index = props.index ? props.index : 0;
 
-  const [position, setPosition] = useState([0, 0, 0]);
-  const [rotation, setRotation] = useState([0, 0, 0]);
+  const divStyle = {
+    verticalAlign: 'middle',
+    display: 'inherit'
+  };
+
+  const playAudio = () => {
+    const audio = new Audio(require(`./../database/Sounds/${data.atomicNumber}.mp3`));
+    audio.play();
+  }
+
 
   useEffect(() => {
-    // Tạo một interval ID để theo dõi setInterval
-    const intervalId = setInterval(() => {
-      // Tạo ra một bản sao của position và cập nhật nó
-      const x = 100 * Math.sin(position[0]);
-      const y = 100 * Math.cos(position[0]);
-      setPosition([x, y, 0]);
-    }, 100);
-
-    // Làm sạch interval khi component unmount
-    return () => {
-      clearInterval(intervalId);
-    };
+   
   }, []);
 
 
@@ -38,9 +34,11 @@ function ItemComponent(props) {
           <div className="custom-block bg-white shadow-lg">
 
               <div className="d-flex" style={{ alignItems: 'center' }}>
-                <div style={{ verticalAlign: 'middle' }}>
+                <div style={divStyle}>
                   <h2 className="mb-2">{data.symbol}</h2>
-
+                  
+                  <button type="button" className="btn btn-default" onClick={() => playAudio()}><FaVolumeUp size={27}/></button>
+                  
                   <p className="mb-0"></p>
 
                 </div>
@@ -51,7 +49,7 @@ function ItemComponent(props) {
               {/* <img src="images/topics/undraw_Remote_design_team_re_urdx.png" className="custom-block-image img-fluid" alt="" /> */}
               <div>
       
-      <GLTFModel src={modelPath} width='300' height='200' scale={{x:8, y: 8 , z: 8}} position={position} >
+      <GLTFModel src={modelPath} width='300' height='200' scale={{x:8, y: 8 , z: 8}} >
         <AmbientLight color={0xffffff} />
         <DirectionLight
           color={0xffffff}

@@ -1,9 +1,7 @@
 import './App.css';
 import Header from './components/Header';
-import SeachBar from './components/SeachBar';
 import Footer from './components/Footer';
-import Results from './components/Results';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Detail from './components/Detail';
 import './css/bootstrap-icons.css';

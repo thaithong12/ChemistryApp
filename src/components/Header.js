@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
     render() {
@@ -23,7 +23,7 @@ class Header extends Component {
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav ms-lg-5 me-lg-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link click-scroll" href="#section_1" style={{ color: 'black' }}>Home</a>
+                                    <Link to={'./'} className="nav-link click-scroll" href="#section_1" style={{ color: 'black' }}>Home</Link>
                                 </li>
 
 
