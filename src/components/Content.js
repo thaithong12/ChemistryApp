@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 function Content() {
-  // Định nghĩa trạng thái bằng useState nếu cần
   const [keyword, setKeyWord] = useState('');
 
   return (
