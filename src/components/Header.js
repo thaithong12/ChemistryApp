@@ -12,9 +12,9 @@ class Header extends Component {
                             <span>Topic</span>
                         </a>
 
-                        <div className="d-lg-none ms-auto me-4">
+                        {/* <div className="d-lg-none ms-auto me-4">
                             <a href="#top" className="navbar-icon bi-person smoothscroll"></a>
-                        </div>
+                        </div> */}
 
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>

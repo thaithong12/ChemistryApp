@@ -56,7 +56,7 @@ function Detail(params) {
                     <div className="row">
                         <div className="container">
                                             <div className="row">
-                                                <div className="col-4 col-lg-4">
+                                                <div className="col-lg-4 col-md-4 col-sm-12">
                                                     <div className="alert alert-primary text-center" role="alert">
                                                         <h4>{data ? data.TenNguyenTo: ''}</h4>
                                                     </div>
@@ -107,8 +107,8 @@ function Detail(params) {
                                                                 <p>{data ? data.LichSu: ''}</p>
                                                     </div>
                                                 </div>
-                                                <div className="col-4 col-lg-4">
-                                                    <div className="alert alert-primary" role="alert" style={{textAlign:'left', overflow: 'hidden', height: '28%'}}>
+                                                <div className="col-md-4 col-lg-4 col-sm-12">
+                                                    <div className="alert alert-primary" role="alert" style={{textAlign:'left', overflow: 'hidden', height: 'auto'}}>
                                                         
                                                         <div className="row">
                                                                 <div className="col-10">
@@ -166,7 +166,7 @@ function Detail(params) {
                                                     </div>
 
                                                 </div>
-                                                <div className="col-4 col-lg-4">
+                                                <div className="col-sm-12 col-md-4 col-lg-4">
                                                     <div className="alert alert-primary" role="alert" style={{textAlign:'left', overflow: 'hidden'}}>
                                                                 <p className="headerOutline">TÍNH CHẤT NGUYÊN TỬ </p>
                                                                 <div className="row">
