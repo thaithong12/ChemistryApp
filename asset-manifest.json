@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.e23a3e3c.css",
-    "main.js": "/static/js/main.99c53f87.js",
+    "main.css": "/static/css/main.6b65de74.css",
+    "main.js": "/static/js/main.3fc67051.js",
     "static/js/988.0c8f0206.chunk.js": "/static/js/988.0c8f0206.chunk.js",
     "static/media/colleagues-working-cozy-office-medium-shot.jpg": "/static/media/colleagues-working-cozy-office-medium-shot.ede31081d8882c544d99.jpg",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "static/media/bg_2.png": "/static/media/bg_2.b04d2d462dd2c2d7f6c5.png",
     "static/media/21.mp3": "/static/media/21.0ba126437139ed0bdc6d.mp3",
     "static/media/46.mp3": "/static/media/46.0b925cab5ce24c9ed95d.mp3",
     "static/media/87.mp3": "/static/media/87.3f2c0ebef21ccb1cc2e7.mp3",
@@ -89,12 +90,12 @@
     "static/media/29.mp3": "/static/media/29.e6d1054947305c1f484f.mp3",
     "static/media/30.mp3": "/static/media/30.b835ee2997d226d15bdb.mp3",
     "index.html": "/index.html",
-    "main.e23a3e3c.css.map": "/static/css/main.e23a3e3c.css.map",
-    "main.99c53f87.js.map": "/static/js/main.99c53f87.js.map",
+    "main.6b65de74.css.map": "/static/css/main.6b65de74.css.map",
+    "main.3fc67051.js.map": "/static/js/main.3fc67051.js.map",
     "988.0c8f0206.chunk.js.map": "/static/js/988.0c8f0206.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e23a3e3c.css",
-    "static/js/main.99c53f87.js"
+    "static/css/main.6b65de74.css",
+    "static/js/main.3fc67051.js"
   ]
 }
