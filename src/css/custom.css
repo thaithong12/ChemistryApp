@@ -12,3 +12,79 @@ ul li {
     background-image: var(--fg-color);
     letter-spacing: .5px;
 }
+
+.titel-dn {
+    font-size: 25px;
+    color: #0072bc;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.titel-truong {
+    font-size: 13px !important;
+    color: #ce1417;
+    letter-spacing: 0;
+    text-align: left;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo-header {
+    float: left;
+    margin: 8px 8px 8px 0px;
+    display: inline-block;
+    padding-left: 5px;
+    width: 150px;
+}
+
+.my-nav {
+    background-image: url('../images/bg_2.png');
+}
+
+
+@media only screen and (max-width: 767.98px) {
+    /* Kiểu dáng cho màn hình có kích thước từ 601px đến 1024px */
+    .titel-dn {
+        font-size: 14px!important;
+    }
+
+    .logo-header{
+
+    }
+
+    .my-nav{
+        align-items: center !important;
+    }
+
+    .t-logo{
+        width: 30% !important;
+    }
+
+    .t-logo-2{
+        width: 70% !important;
+    }
+
+    .titel-truong{
+        font-size: 6px !important;
+    }
+
+    .titel-dn {
+        font-size: 5px !important; 
+    }
+
+    .web{
+        display: none;
+    }
+
+    .data-item{
+        padding-bottom: 5% !important;
+    }
+}
+
+.data-item {
+    padding-bottom: 5%;
+}

@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import PageNotFound from './components/PageNotFound';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Detail from './components/Detail';
@@ -20,7 +21,7 @@ function App() {
             <Route path='/ChemistryApp' exact element={<Home />} />
             <Route path='/detail/:id' exact element={<Detail/>} />
             <Route path='/ChemistryApp/detail/:id' exact element={<Detail/>} />
-            
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer/>
         </main>       
