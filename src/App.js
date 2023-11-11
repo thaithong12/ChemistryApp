@@ -14,17 +14,17 @@ function App() {
   return (
     <div className="App" >
 
-        <main id="top">
-          <Header/>
-          <Routes>
-            <Route path='/' exact element={<Home />} />
-            <Route path='/ChemistryApp' exact element={<Home />} />
-            <Route path='/detail/:id' exact element={<Detail/>} />
-            <Route path='/ChemistryApp/detail/:id' exact element={<Detail/>} />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-          <Footer/>
-        </main>       
+      <main id="top">
+        <Header />
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/ChemistryApp' exact element={<Home />} />
+          <Route path='/detail/:id' element={<Detail />} />
+          <Route path='/ChemistryApp/detail/:id' exact element={<Detail />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+        <Footer />
+      </main>
 
     </div>
   );
