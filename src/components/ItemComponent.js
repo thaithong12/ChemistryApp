@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { GLTFModel, AmbientLight, DirectionLight } from "react-3d-viewer";
 import { Link } from 'react-router-dom';
 import { FaVolumeUp } from 'react-icons/fa';
+
 
 function ItemComponent(props) {
   const data = props.data ? props.data : {};
@@ -49,7 +49,7 @@ function ItemComponent(props) {
               {/* <img src="images/topics/undraw_Remote_design_team_re_urdx.png" className="custom-block-image img-fluid" alt="" /> */}
               <div>
       
-      <GLTFModel src={modelPath} width='300' height='200' scale={{x:8, y: 8 , z: 8}} >
+      {/* <GLTFModel src={modelPath} width='300' height='200' scale={{x:8, y: 8 , z: 8}} autoplay >
         <AmbientLight color={0xffffff} />
         <DirectionLight
           color={0xffffff}
@@ -59,7 +59,17 @@ function ItemComponent(props) {
           color={0xff00ff}
           position={{ x: -100, y: 200, z: -100 }}
         />
-      </GLTFModel>
+      </GLTFModel> */}
+      <model-viewer
+          ar
+          ar-scale
+          ar-modes="scene-viewer webxr quick-look"
+          src={modelPath}
+          ios-src="./cyawan.usdz"
+          alt="Cyawan"
+          autoplay
+          
+    ></model-viewer>      
     </div>
 
           </div>
