@@ -19,7 +19,7 @@ function Detail(params) {
 
 
     useEffect(() => {
-        const isExist = database.find(i => i.atomicNumber == id);
+        const isExist = database.find(i => i.SoHieuNguyenTu == id);
         if (isExist == undefined) {
             console.log('vao day');
             navigate('/');
@@ -70,16 +70,40 @@ function Detail(params) {
                                                 <div className="col-6">
                                                     <div className="alert alert-primary" role="alert" style={{ textAlign: 'left', height: '100%' }}>
                                                         <div className="row">
-                                                            <div className="col-6">
+                                                            {/* <div className="col-7">
                                                                 <p>Nhóm: </p>
                                                                 <p>Chu kì </p>
                                                                 <p>Phân lớp </p>
                                                             </div>
-                                                            <div className="col-6">
-                                                                <p>{data ? data.Nhom : 'Đang cập nhật'}</p>
-                                                                <p>{data ? data.ChuKi : 'Đang cập nhật'}</p>
+                                                            <div className="col-5">
+                                                                <p>{data && data.Nhom ? data.Nhom : '###'}</p>
+                                                                <p>{data && data.ChuKi ? data.ChuKi : '###'}</p>
                                                                 <p>{data && data.PhanLop ? data.PhanLop : '###'}</p>
-                                                            </div>
+                                                            </div> */}
+                                                            <table >
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th className="col-7">Nhóm</th>
+                                                                        <td className="col-5">{data && data.Nhom ? data.Nhom : '###'}</td>
+                                                                       
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th className="col-7">Chu kỳ</th>
+                                                                        <td className="col-5">{data && data.ChuKi ? data.ChuKi : '###'}</td>
+                                                                       
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th className="col-7">Phân lớp  </th>
+                                                                        <td className="col-5">{data && data.PhanLop ? data.PhanLop : '###'}</td>    
+                                                                    </tr>
+                                                                       
+                                                                    <tr>
+                                                                        
+                                                                       
+                                                                        
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
                                                         </div>
 
                                                     </div>
@@ -87,24 +111,35 @@ function Detail(params) {
                                             </div>
                                             <div className="alert alert-primary mt-3" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
                                                 <p className="headerOutline">TÍNH CHẤT CHUNG </p>
-                                                <div className="row">
-                                                    <div className="col-8">
-                                                        <p>Số nguyên tử </p>
-                                                        <p>Nguyên tử khối </p>
-                                                        <p>Số khối </p>
-                                                        <p>Danh mục </p>
-                                                        <p>Màu sắc </p>
-                                                        <p>Có tính phóng xạ </p>
-                                                    </div>
-                                                    <div className="col-4">
-                                                        <p>{data ? data.SoHieuNguyenTu : ''}</p>
-                                                        <p>{data ? data.NguyenTuKhoi : ''}</p>
-                                                        <p>{data && data.SoKhoi ? data.SoKhoi : '###'}</p>
-                                                        <p>{data && data.DanhMuc ? data.DanhMuc : '###'}</p>
-                                                        <p>{data && data.MauSac ? data.MauSac : '###'}</p>
-                                                        <p>{data && data.CoTinhPhongXa ? data.CoTinhPhongXa : '###'}</p>
-                                                    </div>
-                                                </div>
+                                                <table className="custom-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Số nguyên tử</th>
+                                                            <td>{data ? data.SoHieuNguyenTu : ''}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Nguyên tử khối</th>
+                                                            <td>{data && data.NguyenTuKhoi ? data.NguyenTuKhoi : ''}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Số khối</th>
+                                                            <td>{data && data.SoKhoi ? data.SoKhoi : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Danh mục</th>
+                                                            <td>{data && data.DanhMuc ? data.DanhMuc : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Màu sắc</th>
+                                                            <td>{data && data.MauSac ? data.MauSac : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Có tính phóng xạ</th>
+                                                            <td>{data && data.CoTinhPhongXa ? data.CoTinhPhongXa : '###'}</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
 
 
                                             </div>
@@ -112,22 +147,25 @@ function Detail(params) {
                                             <div className="alert alert-primary mt-3" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
 
                                                 <p className="headerOutline">Lịch sử </p>
-                                                <p>{data ? data.LichSu : ''}</p>
+                                                <p className="alert alert-primary">{data ? data.LichSu : ''}</p>
                                             </div>
                                         </div>
                                         <div className="col-md-4 col-lg-4 col-sm-12">
                                             <div className="alert alert-primary" role="alert" style={{ textAlign: 'left', overflow: 'hidden', height: 'auto' }}>
 
-                                                <div className="row">
-                                                    <div className="col-8">
-                                                        <p>Số electron mỗi phân lớp</p>
-                                                        <p>Cấu hình electron</p>
-                                                    </div>
-                                                    <div className="col-4">
-                                                        <p>{data && data.SoElectronMoiPhanLop ? data.SoElectronMoiPhanLop : '###'}</p>
-                                                        <p dangerouslySetInnerHTML={{ __html: data ? data.CauHinhE : '' }} />
-                                                    </div>
-                                                </div>
+                                            <table className="custom-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Số electron mỗi phân lớp</th>
+                                                        <td>{data && data.SoElectronMoiPhanLop ? data.SoElectronMoiPhanLop : '###'}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Cấu hình electron</th>
+                                                        <td dangerouslySetInnerHTML={{ __html: data ? data.CauHinhE : '###' }} />
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
                                                 <div style={{ color: 'black' }} className="mt-3" dangerouslySetInnerHTML={{ __html: data && data.HinhAnh ? data.HinhAnh : '###' }}>
                                                     {/* <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-800 -320 1600 640" className="atom pt-6" width={'100%'}>
                                                         <g className="g">
@@ -146,26 +184,39 @@ function Detail(params) {
                                             <div className="alert alert-primary mt-3" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
                                                 <p className="headerOutline">TÍNH CHẤT VẬT LÝ </p>
 
-                                                <div className="row">
-                                                    <div className="col-8">
-                                                        <p>Trạng thái vật chất </p>
-                                                        <p>Mật độ </p>
-                                                        <p>Nhiệt độ nóng chảy </p>
-                                                        <p>Nhiệt độ sôi </p>
-                                                        <p>Nhiệt lượng nóng chảy </p>
-                                                        <p>Nhiệt bay hơi </p>
-                                                        <p>Nhiệt dung</p>
-                                                    </div>
-                                                    <div className="col-4">
-                                                        <p>{data && data.TrangThaiVatChat ? data.TrangThaiVatChat : '###'}</p>
-                                                        <p>{data && data.MatDo ? data.MatDo : '###'}</p>
-                                                        <p>{data && data.NhietDoNongChay ? data.NhietDoNongChay : '###'} </p>
-                                                        <p>{data && data.NhietDoSoi ? data.NhietDoSoi : '###'}</p>
-                                                        <p>{data && data.NhietLuongNongChay ? data.NhietLuongNongChay : '###'}</p>
-                                                        <p>{data && data.NhietBayHoi ? data.NhietBayHoi : '###'}</p>
-                                                        <p>{data && data.NhietDung ? data.NhietDung : '###'}</p>
-                                                    </div>
-                                                </div>
+                                                <table className="custom-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Trạng thái vật chất</th>
+                                                            <td>{data && data.TrangThaiVatChat ? data.TrangThaiVatChat : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Mật độ</th>
+                                                            <td>{data && data.MatDo ? data.MatDo : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Nhiệt độ nóng chảy</th>
+                                                            <td>{data && data.NhietDoNongChay ? data.NhietDoNongChay : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Nhiệt độ sôi</th>
+                                                            <td>{data && data.NhietDoSoi ? data.NhietDoSoi : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Nhiệt lượng nóng chảy</th>
+                                                            <td>{data && data.NhietLuongNongChay ? data.NhietLuongNongChay : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Nhiệt bay hơi</th>
+                                                            <td>{data && data.NhietBayHoi ? data.NhietBayHoi : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Nhiệt dung</th>
+                                                            <td>{data && data.NhietDung ? data.NhietDung : '###'}</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
 
                                             </div>
 
@@ -177,31 +228,43 @@ function Detail(params) {
                                         <div className="col-sm-12 col-md-4 col-lg-4">
                                             <div className="alert alert-primary" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
                                                 <p className="headerOutline">TÍNH CHẤT NGUYÊN TỬ </p>
-                                                <div className="row">
-                                                    <div className="col-8">
-                                                        <p>Bán kính nguyên tử </p>
-                                                        <p>Bán kính cộng hoá trị </p>
-                                                        <p>Độ âm điện </p>
-                                                        <p>Năng lượng ion hóa </p>
-                                                        <p>Nguyên tử khối  </p>
-                                                        <p>Độ dẫn nhiệt </p>
-                                                        <p>Trạng thái ôxy hóa</p>
-                                                    </div>
-                                                    <div className="col-4">
-                                                        <p>{data && data.BanKinhNguyenTu ? data.BanKinhNguyenTu : '###'}</p>
-                                                        <p>{data && data.BanKinhCongHoaTri ? data.BanKinhCongHoaTri : '###'}</p>
-                                                        <p>{data && data.DoAmDien ? data.DoAmDien : '###'} </p>
-                                                        <p>{data ? data.NangLuongIonHoa : ''}</p>
-                                                        <p>{data ? data.NguyenTuKhoi : ''}</p>
-                                                        <p>{data && data.DoDanNhiet ? data.DoDanNhiet : '###'} </p>
-                                                        <p>{data && data.TrangThaiOxyHoa ? data.TrangThaiOxyHoa : '###'} </p>
-                                                    </div>
-                                                </div>
+                                                <table className="custom-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Bán kính nguyên tử</th>
+                                                            <td>{data && data.BanKinhNguyenTu ? data.BanKinhNguyenTu : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Bán kính cộng hoá trị</th>
+                                                            <td>{data && data.BanKinhCongHoaTri ? data.BanKinhCongHoaTri : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Độ âm điện</th>
+                                                            <td>{data && data.DoAmDien ? data.DoAmDien : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Năng lượng ion hóa</th>
+                                                            <td>{data ? data.NangLuongIonHoa : ''}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Nguyên tử khối</th>
+                                                            <td>{data ? data.NguyenTuKhoi : ''}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Độ dẫn nhiệt</th>
+                                                            <td>{data && data.DoDanNhiet ? data.DoDanNhiet : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Trạng thái ôxy hóa</th>
+                                                            <td>{data && data.TrangThaiOxyHoa ? data.TrangThaiOxyHoa : '###'}</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
 
                                             <div className="alert alert-primary" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
                                                 <p className="headerOutline">ỨNG DỤNG </p>
-                                                <p>{data ? data.UngDung : ''}</p>
+                                                <p className="alert alert-primary">{data ? data.UngDung : ''}</p>
                                             </div>
                                             {/* <div className="alert alert-primary" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
                                                 <p className="headerOutline">SỐ ĐỒNG VỊ </p>
