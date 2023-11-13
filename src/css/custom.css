@@ -88,3 +88,9 @@ ul li {
 .data-item {
     padding-bottom: 5%;
 }
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}

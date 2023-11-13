@@ -21,9 +21,17 @@ function SeachBar() {
     }
 
     const findData = () => {
-        const dataFilter =
-            [...data] ? data.filter(item => item.name.includes(keyword) || item.symbol.includes(keyword) || item.atomicNumber === (keyword) || item.electronegativity === (keyword) || item.groupBlock.includes(keyword)) : []
-        return dataFilter;
+        // const dataFilter =
+        //     [...data] ? data.filter(item => item.name.includes(keyword) || item.symbol.includes(keyword) || item.atomicNumber === (keyword) || item.electronegativity === (keyword) || item.groupBlock.includes(keyword)) : []
+        let dataFilterTemp = []
+        for (const elm of data)
+        {
+            if (elm.SoHieuNguyenTu.includes(keyword) || elm.TenNguyenTo.includes(keyword) ||
+                elm.KiHieuHoaHoc.includes(keyword) || elm.Nhom.includes(keyword)) {
+                dataFilterTemp.push(elm);
+            }
+        }
+        return dataFilterTemp;
     }
 
     return (
