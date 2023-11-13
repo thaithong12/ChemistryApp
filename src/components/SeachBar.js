@@ -40,7 +40,7 @@ function SeachBar() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 col-12 mx-auto">
-                            <h1 className="text-white text-center">Từ điển Nguyên tố</h1>
+                            <h1 className="text-white text-center">Từ điển Nguyên tố Hoá Học</h1>
                             <h6 className="text-center">Hỗ trợ bạn 10 điểm</h6>
                             <form onSubmit={(e) => handleFormSubmit(e)} method="get" className="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
                                 <div className="input-group input-group-lg">
