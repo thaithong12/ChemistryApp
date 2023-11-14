@@ -24,7 +24,8 @@ function ItemComponent(props) {
 
 
  let modelPath = props.data && parseInt(props.data.SoHieuNguyenTu) >= 100 ? `https://storage.googleapis.com/search-ar-edu/periodic-table/element_${data.SoHieuNguyenTu}_${data.TenNguyenTo.toLowerCase()}/element_${data.SoHieuNguyenTu}_${data.TenNguyenTo.toLowerCase()}.glb` : 
-    `https://storage.googleapis.com/search-ar-edu/periodic-table/element_0${data.SoHieuNguyenTu}_${data.TenNguyenTo.toLowerCase()}/element_0${data.SoHieuNguyenTu}_${data.TenNguyenTo.toLowerCase()}.glb`;
+                  props.data && parseInt(props.data.SoHieuNguyenTu) >= 10 ? `https://storage.googleapis.com/search-ar-edu/periodic-table/element_0${data.SoHieuNguyenTu}_${data.TenNguyenTo.toLowerCase()}/element_0${data.SoHieuNguyenTu}_${data.TenNguyenTo.toLowerCase()}.glb`
+                                                                          : `https://storage.googleapis.com/search-ar-edu/periodic-table/element_00${data.SoHieuNguyenTu}_${data.TenNguyenTo.toLowerCase()}/element_00${data.SoHieuNguyenTu}_${data.TenNguyenTo.toLowerCase()}.glb`;
   
   return (
     <div className="container data-item" style={{ marginTop: index !== 0 ? '10%' : '0' }}>
