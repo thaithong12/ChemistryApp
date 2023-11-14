@@ -147,7 +147,7 @@ function Detail(params) {
                                             <div className="alert alert-primary mt-3" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
 
                                                 <p className="headerOutline">Lịch sử </p>
-                                                <p className="alert alert-primary">{data ? data.LichSu : ''}</p>
+                                                <p className="alert alert-primary" dangerouslySetInnerHTML={{ __html: data ? data.LichSu : '###' }} />
                                             </div>
                                         </div>
                                         <div className="col-md-4 col-lg-4 col-sm-12">
@@ -264,7 +264,7 @@ function Detail(params) {
 
                                             <div className="alert alert-primary" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
                                                 <p className="headerOutline">ỨNG DỤNG </p>
-                                                <p className="alert alert-primary">{data ? data.UngDung : ''}</p>
+                                                <p className="alert alert-primary" dangerouslySetInnerHTML={{ __html: data ? data.UngDung : '###' }}/>
                                             </div>
                                             {/* <div className="alert alert-primary" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
                                                 <p className="headerOutline">SỐ ĐỒNG VỊ </p>

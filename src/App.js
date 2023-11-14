@@ -20,7 +20,7 @@ function App() {
           <Route path='/' exact element={<Home />} />
           <Route path='/ChemistryApp' exact element={<Home />} />
           <Route path='/detail/:id' element={<Detail />} />
-          <Route path='/ChemistryApp/detail/:id' exact element={<Detail />} />
+          {/* <Route path='/ChemistryApp/detail/:id' exact element={<Detail />} /> */}
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
