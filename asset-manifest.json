@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5794e570.css",
-    "main.js": "/static/js/main.d8345e81.js",
+    "main.js": "/static/js/main.d42651a3.js",
     "static/js/988.0c8f0206.chunk.js": "/static/js/988.0c8f0206.chunk.js",
     "static/media/colleagues-working-cozy-office-medium-shot.jpg": "/static/media/colleagues-working-cozy-office-medium-shot.ede31081d8882c544d99.jpg",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
@@ -91,11 +91,11 @@
     "static/media/30.mp3": "/static/media/30.b835ee2997d226d15bdb.mp3",
     "index.html": "/index.html",
     "main.5794e570.css.map": "/static/css/main.5794e570.css.map",
-    "main.d8345e81.js.map": "/static/js/main.d8345e81.js.map",
+    "main.d42651a3.js.map": "/static/js/main.d42651a3.js.map",
     "988.0c8f0206.chunk.js.map": "/static/js/988.0c8f0206.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5794e570.css",
-    "static/js/main.d8345e81.js"
+    "static/js/main.d42651a3.js"
   ]
 }
