@@ -14,10 +14,10 @@ function NoData(props) {
                         <div>
 
                             {check === 0 ? (<div>
-                                <h5 className="mb-2">Xin chao ! Minh co the tim kiem cho ban day</h5>
+                                <h5 className="mb-2">Xin chào ! Mình có thể tìm kiếm giúp bạn đấy</h5>
 
-                                <p className="mb-0">Hay tan dung trang web cua minh nhe</p>
-                            </div>) : (<div><h5 className="mb-2">Tiec qua ! Du lieu ban tim kiem khong thay roi, ban hay thu tu khoa khac nhe</h5></div>)}
+                                <p className="mb-0">Hãy tận dụng trang web của mình nhé</p>
+                            </div>) : (<div><h5 className="mb-2">Tiếc quá ! Dữ liệu bàn tìm kiếm chưa có rồi, bạn hãy thử từ khoá khác nhé ^^</h5></div>)}
                         </div>
                     </div>
                 </div>

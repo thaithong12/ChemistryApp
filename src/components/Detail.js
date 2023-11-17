@@ -16,7 +16,7 @@ function Detail(params) {
 
     // https://docs.google.com/spreadsheets/d/1GMmK95MPBJdFGFvKLz-LTPvDvjMcfRmWb_mmIp5Yrz0/edit#gid=0
     const endpoint = 'https://script.google.com/macros/s/AKfycbyDO7clO6GPbA3P3WxLipeFBo56HpIZz8Woa5zAINKq_b3WXoI7Wd7Rt9Q2ytZmefREUA/exec'
-
+    console.log('Detail');
 
     useEffect(() => {
         const isExist = database.find(i => i.SoHieuNguyenTu == id);
@@ -93,7 +93,7 @@ function Detail(params) {
                                                                        
                                                                     </tr>
                                                                     <tr>
-                                                                        <th className="col-7">Phân lớp  </th>
+                                                                        <th className="col-7">Loại nguyên tố</th>
                                                                         <td className="col-5">{data && data.PhanLop ? data.PhanLop : '###'}</td>    
                                                                     </tr>
                                                                        
@@ -182,7 +182,9 @@ function Detail(params) {
                                             </div>
 
                                             <div className="alert alert-primary mt-3" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
-                                                <p className="headerOutline">TÍNH CHẤT VẬT LÝ </p>
+                                                <p className="headerOutline">Tình hình sản xuất và phân bố </p>
+                                                <p className="alert alert-primary" dangerouslySetInnerHTML={{ __html: data ? data.TinhHinhSanXuatVaPhanBoQuangOVietNam : '###' }}/>
+                                                {/* <p className="headerOutline">TÍNH CHẤT VẬT LÝ </p>
 
                                                 <table className="custom-table">
                                                     <tbody>
@@ -215,7 +217,7 @@ function Detail(params) {
                                                             <td>{data && data.NhietDung ? data.NhietDung : '###'}</td>
                                                         </tr>
                                                     </tbody>
-                                                </table>
+                                                </table> */}
 
 
                                             </div>
