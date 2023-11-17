@@ -26,8 +26,8 @@ function SeachBar() {
         let dataFilterTemp = []
         for (const elm of data)
         {
-            if (elm.SoHieuNguyenTu.includes(keyword) || elm.TenNguyenTo.includes(keyword) ||
-                elm.KiHieuHoaHoc.includes(keyword) || elm.Nhom.includes(keyword)) {
+            if (elm.SoHieuNguyenTu.toLowerCase().includes(keyword.toLowerCase()) || elm.TenNguyenTo.toLowerCase().includes(keyword.toLowerCase()) ||
+                elm.KiHieuHoaHoc.toLowerCase().includes(keyword.toLowerCase()) || elm.Nhom.includes(keyword)) {
                 dataFilterTemp.push(elm);
             }
         }
