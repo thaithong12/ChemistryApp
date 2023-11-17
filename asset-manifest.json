@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ChemistryApp/static/css/main.d3fa8dd5.css",
-    "main.js": "/ChemistryApp/static/js/main.494632d3.js",
+    "main.js": "/ChemistryApp/static/js/main.9c53e1b1.js",
     "static/js/988.0c8f0206.chunk.js": "/ChemistryApp/static/js/988.0c8f0206.chunk.js",
     "static/media/colleagues-working-cozy-office-medium-shot.jpg": "/ChemistryApp/static/media/colleagues-working-cozy-office-medium-shot.ede31081d8882c544d99.jpg",
     "static/media/bootstrap-icons.woff?": "/ChemistryApp/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
@@ -91,11 +91,11 @@
     "static/media/30.mp3": "/ChemistryApp/static/media/30.b835ee2997d226d15bdb.mp3",
     "index.html": "/ChemistryApp/index.html",
     "main.d3fa8dd5.css.map": "/ChemistryApp/static/css/main.d3fa8dd5.css.map",
-    "main.494632d3.js.map": "/ChemistryApp/static/js/main.494632d3.js.map",
+    "main.9c53e1b1.js.map": "/ChemistryApp/static/js/main.9c53e1b1.js.map",
     "988.0c8f0206.chunk.js.map": "/ChemistryApp/static/js/988.0c8f0206.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3fa8dd5.css",
-    "static/js/main.494632d3.js"
+    "static/js/main.9c53e1b1.js"
   ]
 }
