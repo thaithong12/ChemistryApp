@@ -3,13 +3,16 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import database from '../database/data.json'
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
+import queryString from 'query-string';
 import "react-loading-skeleton/dist/skeleton.css";
 import '../css/custom.css'
 import '../css/electron.css'
 
 function Detail(params) {
-    const { id } = useParams();
+    const location = useLocation();
+    const { id } = queryString.parse(location.search);
+    // const { id } = useParams();
     const [isLoading, setLoading] = useState(true);
     const [data, setData] = useState({});
     const navigate = useNavigate();
@@ -238,7 +241,7 @@ function Detail(params) {
                                                         </tr>
                                                         <tr>
                                                             <th>Bán kính ion</th>
-                                                            <td>{data && data.BanKinhCongHoaTri ? data.BanKinhCongHoaTri : '###'}</td>
+                                                            <td>{data && data.BanKinhIon ? data.BanKinhIon : '###'}</td>
                                                         </tr>
                                                         <tr>
                                                             <th>Độ âm điện</th>
