@@ -85,22 +85,22 @@ function Detail(params) {
                                                                     <tr>
                                                                         <th className="col-7">Nhóm</th>
                                                                         <td className="col-5">{data && data.Nhom ? data.Nhom : '###'}</td>
-                                                                       
+
                                                                     </tr>
                                                                     <tr>
                                                                         <th className="col-7">Chu kỳ</th>
                                                                         <td className="col-5">{data && data.ChuKi ? data.ChuKi : '###'}</td>
-                                                                       
+
                                                                     </tr>
                                                                     <tr>
                                                                         <th className="col-7">Loại nguyên tố</th>
-                                                                        <td className="col-5">{data && data.PhanLop ? data.PhanLop : '###'}</td>    
+                                                                        <td className="col-5">{data && data.LoaiNguyenTo ? data.LoaiNguyenTo : '###'}</td>
                                                                     </tr>
-                                                                       
+
                                                                     <tr>
-                                                                        
-                                                                       
-                                                                        
+
+
+
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -153,18 +153,18 @@ function Detail(params) {
                                         <div className="col-md-4 col-lg-4 col-sm-12">
                                             <div className="alert alert-primary" role="alert" style={{ textAlign: 'left', overflow: 'hidden', height: 'auto' }}>
 
-                                            <table className="custom-table">
-                                                <tbody>
-                                                    <tr>
-                                                        <th>Số electron mỗi phân lớp</th>
-                                                        <td>{data && data.SoElectronMoiPhanLop ? data.SoElectronMoiPhanLop : '###'}</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Cấu hình electron</th>
-                                                        <td dangerouslySetInnerHTML={{ __html: data ? data.CauHinhE : '###' }} />
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                <table className="custom-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Số electron mỗi phân lớp</th>
+                                                            <td>{data && data.SoElectronMoiPhanLop ? data.SoElectronMoiPhanLop : '###'}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Cấu hình electron</th>
+                                                            <td dangerouslySetInnerHTML={{ __html: data ? data.CauHinhE : '###' }} />
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
 
                                                 <div style={{ color: 'black' }} className="mt-3" dangerouslySetInnerHTML={{ __html: data && data.HinhAnh ? data.HinhAnh : '###' }}>
                                                     {/* <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-800 -320 1600 640" className="atom pt-6" width={'100%'}>
@@ -183,7 +183,7 @@ function Detail(params) {
 
                                             <div className="alert alert-primary mt-3" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
                                                 <p className="headerOutline">Tình hình sản xuất và phân bố </p>
-                                                <p className="alert alert-primary" dangerouslySetInnerHTML={{ __html: data ? data.TinhHinhSanXuatVaPhanBoQuangOVietNam : '###' }}/>
+                                                <p className="alert alert-primary" dangerouslySetInnerHTML={{ __html: data ? data.TinhHinhSanXuatVaPhanBoQuangOVietNam : '###' }} />
                                                 {/* <p className="headerOutline">TÍNH CHẤT VẬT LÝ </p>
 
                                                 <table className="custom-table">
@@ -237,7 +237,7 @@ function Detail(params) {
                                                             <td>{data && data.BanKinhNguyenTu ? data.BanKinhNguyenTu : '###'}</td>
                                                         </tr>
                                                         <tr>
-                                                            <th>Bán kính cộng hoá trị</th>
+                                                            <th>Bán kính ion</th>
                                                             <td>{data && data.BanKinhCongHoaTri ? data.BanKinhCongHoaTri : '###'}</td>
                                                         </tr>
                                                         <tr>
@@ -256,17 +256,17 @@ function Detail(params) {
                                                             <th>Độ dẫn nhiệt</th>
                                                             <td>{data && data.DoDanNhiet ? data.DoDanNhiet : '###'}</td>
                                                         </tr>
-                                                        <tr>
+                                                        {/* <tr>
                                                             <th>Trạng thái ôxy hóa</th>
                                                             <td>{data && data.TrangThaiOxyHoa ? data.TrangThaiOxyHoa : '###'}</td>
-                                                        </tr>
+                                                        </tr> */}
                                                     </tbody>
                                                 </table>
                                             </div>
 
                                             <div className="alert alert-primary" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
                                                 <p className="headerOutline">ỨNG DỤNG </p>
-                                                <p className="alert alert-primary" dangerouslySetInnerHTML={{ __html: data ? data.UngDung : '###' }}/>
+                                                <p className="alert alert-primary" dangerouslySetInnerHTML={{ __html: data ? data.UngDung : '###' }} />
                                             </div>
                                             {/* <div className="alert alert-primary" role="alert" style={{ textAlign: 'left', overflow: 'hidden' }}>
                                                 <p className="headerOutline">SỐ ĐỒNG VỊ </p>
