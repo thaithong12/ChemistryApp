@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.514b0625.css",
+    "main.css": "/static/css/main.a7f4bde9.css",
     "main.js": "/static/js/main.4b5abe2b.js",
     "static/js/988.0c8f0206.chunk.js": "/static/js/988.0c8f0206.chunk.js",
     "static/media/colleagues-working-cozy-office-medium-shot.jpg": "/static/media/colleagues-working-cozy-office-medium-shot.ede31081d8882c544d99.jpg",
@@ -90,12 +90,12 @@
     "static/media/29.mp3": "/static/media/29.e6d1054947305c1f484f.mp3",
     "static/media/30.mp3": "/static/media/30.b835ee2997d226d15bdb.mp3",
     "index.html": "/index.html",
-    "main.514b0625.css.map": "/static/css/main.514b0625.css.map",
+    "main.a7f4bde9.css.map": "/static/css/main.a7f4bde9.css.map",
     "main.4b5abe2b.js.map": "/static/js/main.4b5abe2b.js.map",
     "988.0c8f0206.chunk.js.map": "/static/js/988.0c8f0206.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.514b0625.css",
+    "static/css/main.a7f4bde9.css",
     "static/js/main.4b5abe2b.js"
   ]
 }
