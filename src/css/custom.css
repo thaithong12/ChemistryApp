@@ -9,7 +9,7 @@ ul li {
     border-radius: 1rem;
     margin: 0 -2.25rem 1.5rem;
     color: var(--alt-text-color);
-    background-image: var(--fg-color);
+    background-color: #6296e5 !important;
     letter-spacing: .5px;
 }
 
