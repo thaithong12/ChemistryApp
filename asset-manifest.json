@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.e137c464.css",
-    "main.js": "/static/js/main.3e4ff95c.js",
+    "main.js": "/static/js/main.ce9cc0c9.js",
     "static/js/988.0c8f0206.chunk.js": "/static/js/988.0c8f0206.chunk.js",
     "static/media/colleagues-working-cozy-office-medium-shot.jpg": "/static/media/colleagues-working-cozy-office-medium-shot.ede31081d8882c544d99.jpg",
+    "static/media/bangtinhtan.jpg": "/static/media/bangtinhtan.091ec81790a4d20142c4.jpg",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
-    "static/media/bangtinhtan.jpg": "/static/media/bangtinhtan.d49b106f74494e09cb04.jpg",
-    "static/media/bangnhiet.jpg": "/static/media/bangnhiet.bfede5b0e6aacc39b770.jpg",
+    "static/media/bangnhiet.jpg": "/static/media/bangnhiet.095735565c161efb292b.jpg",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
-    "static/media/bangnangluong.jpg": "/static/media/bangnangluong.331692ec0b8d6ffef7cd.jpg",
+    "static/media/bangnangluong.jpg": "/static/media/bangnangluong.8679f882c1c964d37f52.jpg",
     "static/media/bg_2.png": "/static/media/bg_2.b04d2d462dd2c2d7f6c5.png",
     "static/media/21.mp3": "/static/media/21.0ba126437139ed0bdc6d.mp3",
     "static/media/46.mp3": "/static/media/46.0b925cab5ce24c9ed95d.mp3",
@@ -94,11 +94,11 @@
     "static/media/30.mp3": "/static/media/30.b835ee2997d226d15bdb.mp3",
     "index.html": "/index.html",
     "main.e137c464.css.map": "/static/css/main.e137c464.css.map",
-    "main.3e4ff95c.js.map": "/static/js/main.3e4ff95c.js.map",
+    "main.ce9cc0c9.js.map": "/static/js/main.ce9cc0c9.js.map",
     "988.0c8f0206.chunk.js.map": "/static/js/988.0c8f0206.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e137c464.css",
-    "static/js/main.3e4ff95c.js"
+    "static/js/main.ce9cc0c9.js"
   ]
 }
