@@ -8,6 +8,7 @@ import Detail from './components/Detail';
 import './css/bootstrap-icons.css';
 import './css/bootstrap.min.css';
 import './css/templatemo-topic-listing.css';
+import LookupTable from './components/LookupTable';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' exact element={<Home />} />
           <Route path='*/ChemistryApp' element={<Home />} />
           <Route path='/detail' element={<Detail />} />
+          <Route exact path='/bangtracuu' element={<LookupTable />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />

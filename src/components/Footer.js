@@ -8,14 +8,14 @@ class Footer extends Component {
                     <div className="container">
                         <div className="row">
 
-                            <div className="col-lg-3 col-12 mb-4 pb-2">
+                            <div className="col-lg-6 col-12 mb-6 pb-2">
                                 <a className="navbar-brand mb-2" href="index.html">
                                     <i className="bi-back"></i>
-                                    <span>Topic</span>
+                                    <span className='logo-responsive'>Từ điển Nguyên tố Hoá Học</span>
                                 </a>
                             </div>
 
-                            <div className="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                            {/* <div className="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
                                 <h6 className="site-footer-title mb-3">Information</h6>
 
                                 <p className="text-white d-flex mb-1">
@@ -29,7 +29,7 @@ class Footer extends Component {
                                         info@company.com
                                     </a>
                                 </p>
-                            </div>
+                            </div> */}
 
                             <div className="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
                                 <div className="dropdown">
